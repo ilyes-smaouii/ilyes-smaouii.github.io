@@ -1,0 +1,17 @@
+* {
+  font-family: Arial;
+  background-color: rgb(50, 50, 50);
+  color: rgb(200, 200, 200);
+}
+
+a {
+  font-weight: bold;
+}
+
+.code_extract {
+  font-family: Consolas;
+}
+
+#intro-pp {
+  width: 128px;
+}
