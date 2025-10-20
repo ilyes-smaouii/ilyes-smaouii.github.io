@@ -24,8 +24,8 @@ function convertLinksInHtml(html_content) {
 }
 
 async function start() {
-  const header_tag = document.getElementsByTagName("header")[0];
-  const footer_tag = document.getElementsByTagName("header")[0];
+  header_tag = document.getElementsByTagName("header")[0];
+  footer_tag = document.getElementsByTagName("header")[0];
 
   try {
     // const hdr_content = await fetchHeader();
