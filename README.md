@@ -12,3 +12,6 @@ Update : apparently you can use `.md` files for content - well for the main inde
 Anyway, I'll maybe come back to this later.\
 Update : added some stuff. I'll also use this as an opportunity to toy around a bit with Web development,
 which I don't necessarily do too often.
+
+### 2025/10/20
+Trying out some stuff.

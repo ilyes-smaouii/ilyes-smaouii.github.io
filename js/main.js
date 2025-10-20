@@ -1,4 +1,4 @@
-ROOT_URL = "../"
+ROOT_URL = "./"
 const HDR_ID = "_header"
 const FTR_ID = "_footer"
 const HDR_FILENAME = ROOT_URL + "res/html/header_content";
