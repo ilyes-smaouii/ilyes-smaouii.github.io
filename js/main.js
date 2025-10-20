@@ -31,7 +31,7 @@ async function start() {
     // const hdr_content = await fetchHeader();
     // const ftr_content = await fetchFooter();
 
-    const [hdr_content, ftr_content] = await Promise.all([
+    [hdr_content, ftr_content] = await Promise.all([
       fetchHeader(),
       fetchFooter()
     ]);
