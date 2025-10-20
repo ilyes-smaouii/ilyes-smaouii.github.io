@@ -1,7 +1,8 @@
+ROOT_URL = "../"
 const HDR_ID = "_header"
 const FTR_ID = "_footer"
-const HDR_FILENAME = "../res/html/header_content";
-const FTR_FILENAME = "../res/html/footer_content";
+const HDR_FILENAME = ROOT_URL + "res/html/header_content";
+const FTR_FILENAME = ROOT_URL + "res/html/footer_content";
 
 async function fetchHeader() {
   const response_hdr = await fetch(HDR_FILENAME);
@@ -17,9 +18,14 @@ async function fetchFooter() {
   return ftr_content;
 }
 
+function convertLinksInHtml(html_content) {
+  // TO-DO : write code to transform html_content
+  return html_content;
+}
+
 async function start() {
-  const header_tag = document.getElementById(HDR_ID);
-  const footer_tag = document.getElementById(FTR_ID);
+  const header_tag = document.getElementsByTagName("header")[0];
+  const footer_tag = document.getElementsByTagName("header")[0];
 
   try {
     // const hdr_content = await fetchHeader();
@@ -29,6 +35,9 @@ async function start() {
       fetchHeader(),
       fetchFooter()
     ]);
+
+    hdr_content = convertLinksInHtml(hdr_content);
+    ftr_content = convertLinksInHtml(ftr_content);
 
     header_tag.innerHTML = hdr_content;
     footer_tag.innerHTML = ftr_content;
